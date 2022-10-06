@@ -14,7 +14,7 @@ public class SysModuleCodeGenerator {
 
         String finalProjectPath = "D:\\IdeaProjects\\code-examples\\mybatisplus-demo\\codegen";
 
-        FastAutoGenerator.create("jdbc:mysql://127.0.0.1:3306/mybatis_test?characterEncoding=utf-8", "root", "123456")
+        FastAutoGenerator.create("jdbc:mysql://127.0.0.1:3306/mybatis_test?characterEncoding=utf8", "root", "123456")
                 .globalConfig(builder -> {
                     builder.author("tdj") // 设置作者
                             .fileOverride()

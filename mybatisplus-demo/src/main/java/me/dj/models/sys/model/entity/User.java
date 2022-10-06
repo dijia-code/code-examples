@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author tdj
- * @since 2022-09-12
+ * @since 2022-10-06
  */
 @TableName("sys_user")
 public class User implements Serializable {
@@ -36,11 +36,6 @@ public class User implements Serializable {
     private String username;
 
     /**
-     * 昵称
-     */
-    private String nickName;
-
-    /**
      * 性别
      */
     private String gender;
@@ -54,16 +49,6 @@ public class User implements Serializable {
      * 邮箱
      */
     private String email;
-
-    /**
-     * 头像地址
-     */
-    private String avatarName;
-
-    /**
-     * 头像真实路径
-     */
-    private String avatarPath;
 
     /**
      * 密码
@@ -129,14 +114,6 @@ public class User implements Serializable {
         this.username = username;
     }
 
-    public String getNickName() {
-        return nickName;
-    }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
-
     public String getGender() {
         return gender;
     }
@@ -159,22 +136,6 @@ public class User implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getAvatarName() {
-        return avatarName;
-    }
-
-    public void setAvatarName(String avatarName) {
-        this.avatarName = avatarName;
-    }
-
-    public String getAvatarPath() {
-        return avatarPath;
-    }
-
-    public void setAvatarPath(String avatarPath) {
-        this.avatarPath = avatarPath;
     }
 
     public String getPassword() {
@@ -247,12 +208,9 @@ public class User implements Serializable {
             "userId = " + userId +
             ", deptId = " + deptId +
             ", username = " + username +
-            ", nickName = " + nickName +
             ", gender = " + gender +
             ", phone = " + phone +
             ", email = " + email +
-            ", avatarName = " + avatarName +
-            ", avatarPath = " + avatarPath +
             ", password = " + password +
             ", pwdResetTime = " + pwdResetTime +
             ", isAdmin = " + isAdmin +
